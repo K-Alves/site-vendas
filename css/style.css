@@ -1,0 +1,274 @@
+@import url(global.css);
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;500;700;900&family=VT323&family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+:root {
+    --font-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    --font-titulo2: 'VT23', monospace;
+    --font-titulo3: 'Xanh Mono', monospace;
+    --font-display: 'Workbench', sans-serif;
+    --font-cursiva: 'Indie Flower', cursive, serif;
+
+    --cor1: #242582;
+    --cor2: #553D67;
+    --cor3: #F64C72;
+    --cor4: #99738E;
+    --cor5: #2F2FA2;
+}
+
+html, body {
+    font-family: var(--font-normal);
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+header{
+    background: url(../img/apresentacao-img.jpg) center center no-repeat fixed;
+    background-size: cover;
+
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header div.menu {
+    position: fixed;
+    width: 100%;
+    font-family: var(--font-titulo2);
+
+    display: flex;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.514));
+    box-shadow: 0px 0px 7px black;
+}
+
+header div.menu div.menu-logo {
+    height: 50px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.menu img {
+    max-height: 40px;
+}
+
+header div.menu a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte1);
+    font-size: 1.3em;
+
+    height: 100%;
+
+    padding: 10px;
+
+    transition: all .5s ease;
+}
+
+header div.menu a:hover {
+    background-color: var(--cor3);
+
+    cursor: pointer;
+}
+
+
+header div.menu ul {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+header div.menu ul li {
+    list-style-type: none;
+    padding: 0px 15px;
+
+    width: 100%;
+}
+
+
+header div.container {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.container h1 {
+    color: white;
+    font-size: 2em;
+    font-family: var(--font-display);
+    font-size: 5em;
+
+    margin: 30px 0px;
+}
+main section.info-marca{
+    border-top: 10px solid rgba(0, 0, 0, 0.952);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.952);
+    background: url(../img/info-marca-img.jpg) center center no-repeat;
+    background-size: cover;
+
+    max-height: 180vh;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main section.info-marca div.info-marca-text {
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
+
+    color: aliceblue;
+
+    margin: 20px;
+
+    width: 700px;
+    min-height: 400px;
+    max-height: 600px;
+    
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex-direction: column;
+}
+
+main section.info-marca div.info-marca-text h1{
+    font-size: 3em;
+    padding-top: 10px;
+    font-family: var(--font-titulo2);
+}
+
+main section.info-marca div.info-marca-text p{
+    font-size: 1.5em;
+    font-family: var(--font-normal);
+
+    text-align: justify;
+
+    padding: 30px;
+}
+
+main section.vantagem-marca {
+    background-color: var(--cor2);
+    color: white;
+
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section.vantagem-marca div.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.vantagem-marca div.titulo h1 {
+    font-size: 2em;
+    font-family: var(--font-titulo2);
+    margin: 20px 10px;
+}
+
+main section.vantagem-marca div.titulo div.logo img {
+    width: 200px;
+}
+
+main section.vantagem-marca div.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+
+main section.vantagem-marca div.van {
+    margin: 10px;
+}
+
+main section.vantagem-marca div.van ul li{
+    list-style: square;
+    list-style-position: inside;
+
+    margin: 10px 0px;
+
+    font-size: 1.5em;
+    font-family: var(--font-titulo3);
+}
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: wheat;
+}
+
+footer a {
+    color: wheat;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: var(--cor3);
+}
+
+@media (max-width: 1000px) {
+    header {
+        background: url(../img/apresentacao-img.jpg) center center no-repeat;
+    }
+    header div.menu li {
+        font-size: .7em;
+    }
+
+    header div.container div h1 {
+        font-size: 3em;
+    }
+
+    section.info-marca {
+        height: 1000px;
+    }
+
+    main section.info-marca div.info-marca-text h1{
+        font-size: 1.5em;
+    }
+
+    main section.info-marca div.info-marca-text p{
+        font-size: 1.1em;
+    }
+
+    .vantagem-marca h1{
+        text-align: center;
+    }
+
+    .vantagem-marca .container .van ul li {
+        font-size: 1.4em;
+    }
+
+}
