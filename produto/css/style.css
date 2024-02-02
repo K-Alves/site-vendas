@@ -249,6 +249,7 @@ main section.produto .container .prod .prod-img img{
 main section.produto .container .prod .prod-info h1{
     text-align: center;
     margin: 10px 0px;
+    font-size: 1.1em;
 
     font-family: var(--font-titulo2);
 }
@@ -331,7 +332,7 @@ footer a:hover {
     }
 
     main section.produto-top .container a .prod .prod-info h1{
-        font-size: .8em;
+        font-size: .7em;
     }
 
     main section.produto .container .prod{
