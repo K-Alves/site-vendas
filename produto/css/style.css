@@ -100,7 +100,7 @@ header div.menu ul li {
 
 main section.produto-top {
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 
 main section.produto-top .produto-top-titulo {
@@ -127,7 +127,7 @@ main section.produto-top .container {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main section.produto-top .container a{
@@ -151,7 +151,7 @@ main section.produto-top .container a .prod  {
     background-color: whitesmoke;
 
     padding: 20px;
-    margin: 25px;
+    margin: 25px 10px;
 
     border-radius: 10px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.39);
@@ -207,15 +207,22 @@ main .divisa h1 {
     font-family: var(--font-titulo);
 }
 
-main section.produto {
-    padding: 50px;
+main section.produto .container{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 main section.produto .container .prod {
     background-color: whitesmoke;
     width: 350px;
     height: 500px;
+
     padding: 20px;
+    margin: 20px;
 
     border-radius: 10px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.39);
@@ -234,7 +241,9 @@ main section.produto .container .prod .prod-img {
 }
 
 main section.produto .container .prod .prod-img img{
+
     width: 100%;
+    
 }
 
 main section.produto .container .prod .prod-info h1{
@@ -300,4 +309,34 @@ footer a {
 footer a:hover {
     cursor: pointer;
     color: var(--cor3);
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    header div.menu a {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    main section.produto-top {
+        height: 300px;
+    }
+
+    main section.produto-top .container a .prod {
+        width: 290px;
+        height: 200px;
+    }
+
+    main section.produto-top .container a .prod .prod-info p{
+        font-size: .7em;
+    }
+
+    main section.produto-top .container a .prod .prod-info h1{
+        font-size: .8em;
+    }
+
+    main section.produto .container .prod{
+        width: 290px;
+        height: 450px;
+    }
+
 }
